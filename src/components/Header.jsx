@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   /* 
     props = {
@@ -19,8 +21,12 @@ function Header() {
         </h1>
         <nav>
           <ul>
-            <li>Acceuil</li>
-            <li>A propos</li>
+            <Link to="/">
+              <li>Acceuil</li>
+            </Link>
+            <Link to="/about">
+              <li>A propos</li>
+            </Link>
           </ul>
         </nav>
       </div>

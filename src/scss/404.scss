@@ -1,0 +1,29 @@
+// Page 404
+
+.not-found__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 1000px;
+  gap: 7em;
+
+  .not-found__color {
+    display: flex;
+    flex-direction: column;
+    color: #ff6060;
+    gap: 3em;
+  }
+  h1 {
+    font-size: 200px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .not-found__link {
+    color: #000;
+  }
+}
