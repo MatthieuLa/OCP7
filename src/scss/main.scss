@@ -102,6 +102,37 @@ main {
   object-fit: cover;
 }
 
+// Cards
+
+.cards-bg {
+  background-color: #f2f2f2;
+  padding: 2rem 0;
+  margin-top: 2em;
+  border-radius: 25px;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  padding: 0 2rem;
+}
+
+.cards {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(10, 10, 10, 0) 42%,
+    rgba(4, 4, 4, 0.205) 99.99%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 1rem;
+  width: 340px;
+  height: 340px;
+}
+
 // Footer
 
 .footer {
