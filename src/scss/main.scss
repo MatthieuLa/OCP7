@@ -8,8 +8,7 @@ body {
 main {
   margin: auto;
   max-width: 1240px;
-  height: 1000px;
-  width: 1240px;
+  height: 100vh;
 }
 
 // Header
@@ -39,6 +38,10 @@ main {
     a {
       text-decoration: none;
       color: #000;
+
+      &.active {
+        text-decoration: underline;
+      }
     }
 
     li {
@@ -46,7 +49,7 @@ main {
       text-decoration: none;
 
       &:hover {
-        border-bottom: 1px solid #000;
+        text-decoration: underline;
         margin: 0;
         padding: 0;
       }
@@ -113,24 +116,59 @@ main {
 
 .cards-wrapper {
   display: flex;
-  justify-content: space-between;
-  gap: 4em;
+  flex-wrap: wrap;
   padding: 0 2rem;
 }
 
 .cards {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(10, 10, 10, 0) 42%,
-    rgba(4, 4, 4, 0.205) 99.99%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
-  border-radius: 25px;
-  box-shadow: 0px 4px 4px 0px #00000040;
   padding: 1rem;
   width: 340px;
   height: 340px;
+
+  .cards-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    width: 65%;
+    z-index: 2;
+    position: relative;
+  }
+
+  .cards-cover {
+    object-fit: cover;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+}
+
+// Collapse component
+
+.collapse {
+  padding: 1rem;
+  background-color: rgba(255, 96, 96, 1);
+  border-radius: 15px;
+  margin-top: 1rem;
+
+  p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  i {
+    color: #fff;
+    font-size: 24px;
+  }
 }
 
 // Footer

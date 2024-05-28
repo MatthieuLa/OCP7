@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   /* 
@@ -11,7 +11,7 @@ function Header() {
     */
   return (
     <>
-      <div className="header-container">
+      <header className="header-container">
         <h1 className="header-logo">
           K
           <span>
@@ -21,15 +21,15 @@ function Header() {
         </h1>
         <nav>
           <ul>
-            <Link to="/">
-              <li>Acceuil</li>
-            </Link>
-            <Link to="/about">
-              <li>A propos</li>
-            </Link>
+            <li>
+              <NavLink to="/">Acceuil</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">A propos</NavLink>
+            </li>
           </ul>
         </nav>
-      </div>
+      </header>
     </>
   );
 }
