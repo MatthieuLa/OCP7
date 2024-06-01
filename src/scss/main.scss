@@ -170,6 +170,37 @@ main {
     font-size: 24px;
   }
 }
+.collapse-title {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  .fa-solid {
+    transition: transform 0.3s ease;
+
+    &.fa-chevron-up {
+      transform: rotate(0deg);
+    }
+
+    &.fa-chevron-down {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.collapse-bg {
+  color: #000;
+  background-color: rgb(246, 246, 246);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  border-radius: 0 0 5px 5px;
+
+  .collapse-content {
+    padding: 1rem;
+  }
+}
 
 // Footer
 
