@@ -6,14 +6,14 @@ body {
 
 main {
   margin: auto;
-  max-width: 1240px;
-  height: 100vh; }
+  max-width: 1240px; }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  margin: auto 6em; }
   .header-container .header-logo {
     color: #ff6060;
     font-size: 65px; }
@@ -39,10 +39,6 @@ main {
         margin: 0;
         padding: 0; }
 
-.placeholder {
-  height: 1000px;
-  width: 1240px; }
-
 .img-overlay {
   width: 1240px;
   height: 226px;
@@ -50,7 +46,8 @@ main {
   border-radius: 25px;
   position: relative;
   z-index: 20;
-  opacity: 1; }
+  opacity: 1;
+  margin-bottom: 2em; }
 
 .img-text {
   color: #fff;
@@ -80,13 +77,15 @@ main {
 .cards-bg {
   background-color: #f2f2f2;
   padding: 2rem 0;
-  margin-top: 2em;
   border-radius: 25px; }
 
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 0 2rem; }
+  .cards-wrapper a {
+    text-decoration: none;
+    color: #000; }
 
 .cards {
   padding: 1rem;
@@ -150,11 +149,45 @@ main {
   .collapse-bg .collapse-content {
     padding: 1rem; }
 
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .slideshow-container .slideshow-img {
+    width: 1240px;
+    height: 435px;
+    object-fit: cover;
+    border-radius: 25px; }
+  .slideshow-container .fa-chevron-left,
+  .slideshow-container .fa-chevron-right {
+    position: absolute;
+    font-size: 62px;
+    color: #fff;
+    cursor: pointer; }
+  .slideshow-container .fa-chevron-left {
+    left: 42px;
+    top: 170px; }
+  .slideshow-container .fa-chevron-right {
+    right: 42px;
+    top: 170px; }
+  .slideshow-container .slideshow-index {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 48px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px; }
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 9.1em;
   color: #fff;
   background-color: #000;
   height: 209px; }

@@ -1,17 +1,26 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import Slideshow from "../components/Slideshow";
+import logements from "/logements.json";
 
 export default function Logement() {
-  const { id } = useParams();
+  let { id } = useParams();
+  const navigate = useNavigate();
+  const logement = logements.find((item) => item.id === id);
 
-  // @TODO : Vérifier au sein d'un useEffect si l'id correspond à un logement, sinon rediriger avec useNavigate vers la page NotFound.
+  useEffect(() => {
+    if (!logement) {
+      navigate("/NotFound");
+    }
+  }, [logement, navigate]);
+
+  if (!logement) {
+    return null;
+  }
 
   return (
     <>
-      <img
-        src="./src/assets/images/02.png"
-        alt="Photo de l'intérieur d'un logement"
-        className="img-logement"
-      />
+      <Slideshow pictures={logement.pictures} />
     </>
   );
 }
