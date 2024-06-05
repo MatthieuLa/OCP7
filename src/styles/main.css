@@ -71,6 +71,39 @@ main {
   opacity: 0.6;
   z-index: -10; }
 
+.content-wrapper .log-title {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 36px; }
+
+.content-wrapper .log-location {
+  font-weight: 500;
+  font-size: 18px; }
+
+.content-wrapper .log-host-name {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 24px; }
+
+.content-wrapper .log-host {
+  object-fit: cover;
+  border-radius: 100px; }
+
+.content-wrapper .log-rating__wrapper .clr-on {
+  color: #ff6060; }
+
+.content-wrapper .log-rating__wrapper .clr-off {
+  color: #e3e3e3; }
+
+.content-wrapper .log-tags__wrapper .log-tag {
+  background-color: #ff6060;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  margin-right: 1rem; }
+
 .img-logement {
   object-fit: cover; }
 
