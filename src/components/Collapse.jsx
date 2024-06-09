@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Collapse({ items }) {
+export default function Collapse({ items, className }) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -8,7 +8,7 @@ export default function Collapse({ items }) {
   };
 
   return (
-    <div className="collapse-container">
+    <div className={`collapse-container ${className}`}>
       {items.map((item, index) => (
         <div key={index} className="collapse-wrapper">
           <div
@@ -25,7 +25,15 @@ export default function Collapse({ items }) {
           {openIndex === index && (
             <div className="collapse-bg">
               <div className="collapse-content">
-                <p>{item.content}</p>
+                {item.title === "Équipements" ? (
+                  <ul>
+                    {item.content.split(", ").map((equipment, i) => (
+                      <li key={i}>{equipment}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{item.content}</p>
+                )}
               </div>
             </div>
           )}

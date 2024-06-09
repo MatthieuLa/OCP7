@@ -31,35 +31,44 @@ export default function Logement() {
     <>
       <Slideshow pictures={logement.pictures} />
       <div className="content-wrapper">
-        <h1 className="log-title">{logement.title}</h1>
-        <p className="log-location">{logement.location}</p>
-        <p className="log-host-name">{logement.host.name}</p>
-        <img
-          src={logement.host.picture}
-          alt={logement.host.name}
-          className="log-host"
-        />
-        <div className="log-rating__wrapper">
-          {[...Array(5)].map((star, i) => {
-            const ratingValue = i + 1;
-            return (
-              <i
-                key={i}
-                className={`fa-solid fa-star ${
-                  ratingValue <= logement.rating ? "clr-on" : "clr-off"
-                }`}
-              ></i>
-            );
-          })}
+        <div className="top-wrapper">
+          <div className="top-description">
+            <h1 className="log-title">{logement.title}</h1>
+            <p className="log-location">{logement.location}</p>
+
+            <div className="log-tags__wrapper">
+              {logement.tags.map((tag, index) => (
+                <span key={index} className="log-tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="top-host__container">
+            <div className="top-host__top">
+              <p className="log-host-name">{logement.host.name}</p>
+              <img
+                src={logement.host.picture}
+                alt={logement.host.name}
+                className="log-host"
+              />
+            </div>
+            <div className="log-rating__wrapper">
+              {[...Array(5)].map((star, i) => {
+                const ratingValue = i + 1;
+                return (
+                  <i
+                    key={i}
+                    className={`fa-solid fa-star ${
+                      ratingValue <= logement.rating ? "clr-on" : "clr-off"
+                    }`}
+                  ></i>
+                );
+              })}
+            </div>
+          </div>
         </div>
-        <div className="log-tags__wrapper">
-          {logement.tags.map((tag, index) => (
-            <span key={index} className="log-tag">
-              {tag}
-            </span>
-          ))}
-        </div>
-        <Collapse items={about} />
+        <Collapse items={about} className="collapse-logement" />
       </div>
     </>
   );

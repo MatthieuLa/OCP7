@@ -29,7 +29,7 @@ export default function About() {
       <div className="img-overlay">
         <img src="./src/assets/images/03.png" alt="" className="img-home" />
       </div>
-      <Collapse items={collapseItems} />
+      <Collapse items={collapseItems} className="collapse-about" />
     </div>
   );
 }
