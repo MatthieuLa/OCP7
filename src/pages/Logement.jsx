@@ -19,14 +19,6 @@ export default function Logement() {
     return null;
   }
 
-  const about = [
-    {
-      title: "Description",
-      content: logement.description,
-    },
-    { title: "Équipements", content: logement.equipments.join(", ") },
-  ];
-
   return (
     <>
       <Slideshow pictures={logement.pictures} />
@@ -68,7 +60,18 @@ export default function Logement() {
             </div>
           </div>
         </div>
-        <Collapse items={about} className="collapse-logement" />
+        <div className="collapse-logement">
+          <Collapse title={"Description"}>
+            <p>{logement.description}</p>
+          </Collapse>
+          <Collapse title={"Equipements"}>
+            <ul>
+              {logement.equipments.map((equipment) => (
+                <li key={equipment}>{equipment}</li>
+              ))}
+            </ul>
+          </Collapse>
+        </div>
       </div>
     </>
   );

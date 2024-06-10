@@ -42,14 +42,16 @@ main {
         padding: 0; }
 
 .img-overlay {
-  width: 1240px;
+  width: 100%;
   height: 226px;
   background-color: #000;
   border-radius: 25px;
   position: relative;
   z-index: 20;
   opacity: 1;
-  margin-bottom: 2em; }
+  margin: 2em auto; }
+  .img-overlay img {
+    width: 100%; }
 
 .img-text {
   color: #fff;
@@ -149,7 +151,8 @@ main {
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  gap: 1.7em; }
   .cards-wrapper a {
     text-decoration: none;
     color: #000; }
@@ -237,7 +240,8 @@ main {
   flex-direction: column;
   justify-content: space-between; }
   .slideshow-container .slideshow-img {
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     height: 435px;
     object-fit: cover;
     border-radius: 25px; }

@@ -29,7 +29,13 @@ export default function About() {
       <div className="img-overlay">
         <img src="./src/assets/images/03.png" alt="" className="img-home" />
       </div>
-      <Collapse items={collapseItems} className="collapse-about" />
+      <div className="collapse-about">
+        {collapseItems.map((item) => (
+          <Collapse key={item.tile} title={item.title}>
+            <p>{item.content}</p>
+          </Collapse>
+        ))}
+      </div>
     </div>
   );
 }

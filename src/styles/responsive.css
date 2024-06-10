@@ -1,0 +1,13 @@
+@media screen and (max-width: 1235px) {
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: auto 2rem;
+    margin-left: 6em; }
+  main {
+    margin: auto 1em; } }
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin: auto 2em; } }
