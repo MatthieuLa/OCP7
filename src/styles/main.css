@@ -4,6 +4,9 @@ body {
   margin: auto;
   max-width: 1440px; }
 
+* {
+  border: 1px solid red !important; }
+
 main {
   margin: auto;
   max-width: 1240px; }
@@ -212,6 +215,7 @@ main {
 .collapse-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
   font-weight: 700;
   font-size: 22px; }

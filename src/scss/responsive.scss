@@ -12,11 +12,119 @@
   }
 }
 
+@media screen and (max-width: 1088px) {
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: auto 2rem;
+    margin-left: 4em;
+  }
+}
+
 @media screen and (max-width: 1024px) {
-  main {
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin: auto 2rem;
+    margin-left: 2em;
+  }
+
+  .img-text {
+    left: 26%;
+  }
+  .header-container {
     margin: auto 2em;
   }
 }
 
+@media screen and (max-width: 928px) {
+  .cards-wrapper {
+    margin-left: 0;
+  }
+
+  .img-text {
+    left: 22%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .header-container {
+    nav {
+      ul {
+        font-size: 18px;
+      }
+    }
+    .header-logo {
+      font-size: 47px;
+    }
+  }
+  .collapse-about {
+    gap: 0;
+  }
+  .img-overlay {
+    height: 120px;
+    border-radius: 15px;
+    img {
+      height: 120px;
+    }
+  }
+
+  .top-wrapper {
+    flex-direction: column;
+  }
+
+  .top-host__container {
+    width: 100%;
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+  }
+
+  .collapse {
+    padding: 0.5rem;
+  }
+
+  .collapse-title {
+    font-size: 16px;
+  }
+
+  .collapse-logement {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .log-title {
+    font-size: 28px;
+  }
+
+  .log-location {
+    font-size: 16px;
+  }
+
+  .log-tags__wrapper {
+    .log-tag {
+      font-size: 14px;
+    }
+  }
+
+  .log-host-name {
+    font-size: 18px;
+  }
+
+  .log-rating__wrapper {
+    .clr-on,
+    .clr-off {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .log-host-name {
+    margin-left: 1em;
+  }
+  .log-rating__wrapper {
+    gap: 0.7em;
+  }
 }
