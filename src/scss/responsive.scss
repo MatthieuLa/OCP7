@@ -1,64 +1,103 @@
-@media screen and (max-width: 1235px) {
-  .cards-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-    margin: auto 2rem;
-    margin-left: 6em;
-  }
-
+@media screen and (max-width: 1178px) {
   main {
-    margin: auto 1em;
+    margin: 2.5em;
   }
-}
 
-@media screen and (max-width: 1088px) {
   .cards-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-    margin: auto 2rem;
-    margin-left: 4em;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .cards-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
     margin: auto 2rem;
     margin-left: 2em;
+
+    a {
+      width: 72%;
+    }
   }
 
   .img-text {
-    left: 26%;
+    left: 25%;
   }
   .header-container {
     margin: auto 2em;
   }
 }
 
-@media screen and (max-width: 928px) {
-  .cards-wrapper {
-    margin-left: 0;
-  }
-
+@media screen and (max-width: 1024px) {
   .img-text {
-    left: 22%;
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 898px) {
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 0;
+    margin-left: 2em;
+  }
+  .img-text {
+    left: 19%;
+  }
+}
+
+@media screen and (max-width: 839px) {
+  .cards {
+    .cards-cover {
+      width: 286px;
+      height: 312px;
+    }
+    .cards-title {
+      font-size: 20px;
+      height: 92%;
+    }
+  }
+}
+
+@media screen and (max-width: 839px) {
+  .img-text {
+    left: 16%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .img-text {
+    left: 19%;
+    font-size: 28px;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: 53%;
+    }
+  }
   .header-container {
     nav {
       ul {
         font-size: 18px;
       }
     }
+
     .header-logo {
       font-size: 47px;
+      @media screen and (max-width: 928px) {
+        .cards-wrapper {
+          margin-left: 0;
+        }
+      }
     }
+    .fa-chevron-left,
+    .fa-chevron-right {
+      font-size: 28px;
+      top: 128px;
+    }
+  }
+
+  .collapse-bg {
+    height: 178px;
   }
   .collapse-about {
     gap: 0;

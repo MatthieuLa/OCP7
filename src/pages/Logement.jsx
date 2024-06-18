@@ -5,32 +5,35 @@ import logements from "/logements.json";
 import Collapse from "../components/Collapse";
 
 export default function Logement() {
-  let { id } = useParams();
-  const navigate = useNavigate();
-  const logement = logements.find((item) => item.id === id);
+  let { id } = useParams(); // Extracts the 'id' parameter from the URL
+  const navigate = useNavigate(); // Provides navigation functionality
+  const logement = logements.find((item) => item.id === id); // Finds the logement object with the matching 'id'
 
   useEffect(() => {
     if (!logement) {
-      navigate("/NotFound");
+      navigate("/NotFound"); // Redirects to the NotFound page if the logement is not found
     }
   }, [logement, navigate]);
 
   if (!logement) {
-    return null;
+    return null; // Renders nothing if the logement is not found
   }
 
   return (
     <>
       <div className="main-container">
+        {/* // Renders the Slideshow component with the logement's pictures */}
         <Slideshow pictures={logement.pictures} />
         <div className="content-wrapper">
           <div className="top-wrapper">
             <div className="top-description">
+              {/* // Renders the logement's title */}
               <h1 className="log-title">{logement.title}</h1>
+              {/* // Renders the logement's location */}
               <p className="log-location">{logement.location}</p>
-
               <div className="log-tags__wrapper">
                 {logement.tags.map((tag, index) => (
+                  // Renders the logement's tags
                   <span key={index} className="log-tag">
                     {tag}
                   </span>
@@ -39,7 +42,9 @@ export default function Logement() {
             </div>
             <div className="top-host__container">
               <div className="top-host__top">
+                {/* // Renders the logement's tags */}
                 <p className="log-host-name">{logement.host.name}</p>
+                {/* // Renders the logement host's picture */}
                 <img
                   src={logement.host.picture}
                   alt={logement.host.name}
@@ -57,15 +62,18 @@ export default function Logement() {
                       }`}
                     ></i>
                   );
+                  // Renders the logement's rating stars
                 })}
               </div>
             </div>
           </div>
           <div className="collapse-logement">
             <Collapse title={"Description"}>
+              {/* // Renders the logement's description */}
               <p>{logement.description}</p>
             </Collapse>
-            <Collapse title={"Equipements"}>
+            <Collapse title={"Équipements"}>
+              {/* // Renders the logement's equipments in a list */}
               <ul>
                 {logement.equipments.map((equipment) => (
                   <li key={equipment}>{equipment}</li>

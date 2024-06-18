@@ -207,27 +207,31 @@ main {
 }
 
 .cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 2rem;
-  gap: 1.7em;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 94%;
+  gap: 2em;
+  // padding: 0 2em;
+  margin: auto 3em;
 
   a {
     text-decoration: none;
     color: #000;
+    width: 85%;
   }
 }
 
 .cards {
-  padding: 1rem;
-  width: 340px;
+  width: 296px;
   height: 340px;
 
   .cards-title {
     color: #fff;
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 1rem;
+    padding: 0 0.5em;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -235,6 +239,7 @@ main {
     width: 65%;
     z-index: 2;
     position: relative;
+    bottom: 8px;
   }
 
   .cards-cover {
@@ -312,6 +317,7 @@ main {
   font-weight: 400;
   line-height: 1.5em;
   border-radius: 0 0 5px 5px;
+  height: 214px;
 
   .collapse-content {
     padding: 1rem;
