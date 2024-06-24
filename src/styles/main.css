@@ -1,11 +1,8 @@
 body {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
-  margin: auto;
+  margin: 0 auto !important;
   max-width: 1440px; }
-
-* {
-  border: 1px solid red !important; }
 
 main {
   margin: auto;
@@ -63,8 +60,9 @@ main {
   text-align: center;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   position: absolute;
-  left: 28%;
-  top: 45%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 5;
   opacity: 1; }
 
@@ -278,7 +276,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4%;
+  margin-top: 7%;
   color: #fff;
   background-color: #000;
   height: 209px; }

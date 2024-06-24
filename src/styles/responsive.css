@@ -8,14 +8,8 @@
     margin-left: 2em; }
     .cards-wrapper a {
       width: 72%; }
-  .img-text {
-    left: 25%; }
   .header-container {
     margin: auto 2em; } }
-
-@media screen and (max-width: 1024px) {
-  .img-text {
-    left: 23%; } }
 
 @media screen and (max-width: 898px) {
   .cards-wrapper {
@@ -23,9 +17,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5em;
     padding: 0;
-    margin-left: 2em; }
-  .img-text {
-    left: 19%; } }
+    margin-left: 2em; } }
 
 @media screen and (max-width: 839px) {
   .cards .cards-cover {
@@ -35,19 +27,24 @@
     font-size: 20px;
     height: 92%; } }
 
-@media screen and (max-width: 839px) {
-  .img-text {
-    left: 16%; } }
-
 @media screen and (max-width: 768px) {
+  main {
+    margin: 1.5em; }
   .img-text {
-    left: 19%;
-    font-size: 28px; }
+    font-size: 28px;
+    width: 71%; }
+  .slideshow-container .slideshow-img {
+    height: 314px; }
   .cards-wrapper {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-left: 3.5em; }
     .cards-wrapper a {
-      width: 53%; }
+      width: 47%; }
+  .cards .cards-cover {
+    width: 85%; }
   .header-container nav ul {
     font-size: 18px; }
   .header-container .header-logo {
@@ -64,22 +61,20 @@
   .collapse-bg {
     height: 178px; }
   .collapse-about {
-    gap: 0; }
+    gap: 2em; }
   .img-overlay {
-    height: 120px;
-    border-radius: 15px; }
+    height: 200px;
+    border-radius: 25px; }
     .img-overlay img {
-      height: 120px; }
+      height: 200px; }
   .top-wrapper {
     flex-direction: column; }
   .top-host__container {
     width: 100%;
     flex-direction: row-reverse !important;
     justify-content: space-between; }
-  .collapse {
-    padding: 0.5rem; }
   .collapse-title {
-    font-size: 16px; }
+    font-size: 20 px; }
   .collapse-logement {
     gap: 0;
     flex-direction: column; }
@@ -95,8 +90,30 @@
   .log-rating__wrapper .clr-off {
     font-size: 18px; } }
 
+@media screen and (max-width: 702px) {
+  .cards-wrapper {
+    margin-left: 2.5em; } }
+
+@media screen and (max-width: 530px) {
+  .cards-wrapper {
+    margin-left: 2em; } }
+
 @media screen and (max-width: 425px) {
   .log-host-name {
-    margin-left: 1em; }
+    margin-left: 2em; }
   .log-rating__wrapper {
-    gap: 0.7em; } }
+    gap: 0.7em; }
+  .cards-bg {
+    background-color: #fff; }
+    .cards-bg .cards-wrapper {
+      gap: 0;
+      margin-left: 3em; }
+  .cards .cards-cover {
+    width: 289px;
+    height: 289px; }
+  .cards .cards-title {
+    height: 83%; } }
+
+@media screen and (max-width: 375px) {
+  .cards-bg .cards-wrapper {
+    margin-left: 1.4em; } }

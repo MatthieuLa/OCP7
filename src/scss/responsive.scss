@@ -14,17 +14,8 @@
     }
   }
 
-  .img-text {
-    left: 25%;
-  }
   .header-container {
     margin: auto 2em;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .img-text {
-    left: 23%;
   }
 }
 
@@ -35,9 +26,6 @@
     gap: 1.5em;
     padding: 0;
     margin-left: 2em;
-  }
-  .img-text {
-    left: 19%;
   }
 }
 
@@ -54,24 +42,35 @@
   }
 }
 
-@media screen and (max-width: 839px) {
-  .img-text {
-    left: 16%;
-  }
-}
-
 @media screen and (max-width: 768px) {
+  main {
+    margin: 1.5em;
+  }
   .img-text {
-    left: 19%;
     font-size: 28px;
+    width: 71%;
+  }
+
+  .slideshow-container {
+    .slideshow-img {
+      height: 314px;
+    }
   }
 
   .cards-wrapper {
     display: flex;
     flex-direction: column;
-
+    position: relative;
+    width: 100%;
+    margin-left: 3.5em;
     a {
-      width: 53%;
+      width: 47%;
+    }
+  }
+
+  .cards {
+    .cards-cover {
+      width: 85%;
     }
   }
   .header-container {
@@ -100,13 +99,13 @@
     height: 178px;
   }
   .collapse-about {
-    gap: 0;
+    gap: 2em;
   }
   .img-overlay {
-    height: 120px;
-    border-radius: 15px;
+    height: 200px;
+    border-radius: 25px;
     img {
-      height: 120px;
+      height: 200px;
     }
   }
 
@@ -120,12 +119,8 @@
     justify-content: space-between;
   }
 
-  .collapse {
-    padding: 0.5rem;
-  }
-
   .collapse-title {
-    font-size: 16px;
+    font-size: 20 px;
   }
 
   .collapse-logement {
@@ -159,11 +154,48 @@
   }
 }
 
+@media screen and (max-width: 702px) {
+  .cards-wrapper {
+    margin-left: 2.5em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .cards-wrapper {
+    margin-left: 2em;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .log-host-name {
-    margin-left: 1em;
+    margin-left: 2em;
   }
   .log-rating__wrapper {
     gap: 0.7em;
+  }
+
+  .cards-bg {
+    background-color: #fff;
+    .cards-wrapper {
+      gap: 0;
+      margin-left: 3em;
+    }
+  }
+  .cards {
+    .cards-cover {
+      width: 289px;
+      height: 289px;
+    }
+    .cards-title {
+      height: 83%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cards-bg {
+    .cards-wrapper {
+      margin-left: 1.4em;
+    }
   }
 }
