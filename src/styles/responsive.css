@@ -19,6 +19,9 @@
   .img-text {
     font-size: 28px;
     width: 71%; }
+  .slideshow-container .fa-chevron-left,
+  .slideshow-container .fa-chevron-right {
+    top: 132px; }
   .slideshow-container .slideshow-img {
     height: 314px; }
   .cards-wrapper {

@@ -49,6 +49,10 @@
   }
 
   .slideshow-container {
+    .fa-chevron-left,
+    .fa-chevron-right {
+      top: 132px;
+    }
     .slideshow-img {
       height: 314px;
     }
