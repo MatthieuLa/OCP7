@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-export default function Collapse({ title, children }) {
+export default function Collapse({ title, children, customClass }) {
   const [isOpen, setIsOpen] = useState(false); // State variable to track whether the collapse is open or closed
 
   return (
-    <div className="collapse-wrapper">
+    <div className={`collapse-wrapper ${customClass}`}>
       <div
         className="collapse-title collapse"
         onClick={() => {
@@ -17,7 +17,9 @@ export default function Collapse({ title, children }) {
         ></i>
       </div>
       {isOpen && (
-        <div className="collapse-bg">
+        // I apply the custom class to separate the style from the Logement page
+        <div className={`collapse-bg ${customClass}-bg`}>
+          {" "}
           <div className="collapse-content">{children}</div>{" "}
           {/* Display the content if the collapse is open */}
         </div>

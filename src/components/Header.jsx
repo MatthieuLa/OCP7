@@ -1,14 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 function Header() {
-  /* 
-    props = {
-        navItem: "Mention légales"
-        abc: "ABC"
-        [key]: value,
-        children
-    }
-    */
   return (
     <>
       <header className="header-container">

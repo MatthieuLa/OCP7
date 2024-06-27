@@ -25,13 +25,14 @@ export default function About() {
   ];
 
   return (
-    <div>
+    <div className="about-wrapper">
       <div className="img-overlay">
         <img src="./src/assets/images/03.png" alt="" className="img-home" />
       </div>
       <div className="collapse-about">
         {collapseItems.map((item) => (
-          <Collapse key={item.tile} title={item.title}>
+          // I pass the title and content of each item and a custom class as props to the Collapse component
+          <Collapse key={item.tile} title={item.title} customClass="about">
             <p>{item.content}</p>
           </Collapse>
         ))}

@@ -1,35 +1,21 @@
-@media screen and (max-width: 1178px) {
-  main {
-    margin: 2.5em; }
-  .cards-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto 2rem;
-    margin-left: 2em; }
-    .cards-wrapper a {
-      width: 72%; }
-  .header-container {
-    margin: auto 2em; } }
+.header-container {
+  margin: auto 4em; }
 
-@media screen and (max-width: 898px) {
+@media screen and (max-width: 1024px) {
   .cards-wrapper {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5em;
-    padding: 0;
-    margin-left: 2em; } }
+    gap: 40px 100px;
+    margin: 36px 28px; } }
 
-@media screen and (max-width: 839px) {
-  .cards .cards-cover {
-    width: 286px;
-    height: 312px; }
-  .cards .cards-title {
-    font-size: 20px;
-    height: 92%; } }
+.cards .cards-title {
+  font-size: 16px;
+  width: 90%; }
 
 @media screen and (max-width: 768px) {
   main {
     margin: 1.5em; }
+  .header-container {
+    margin: auto 3em; }
   .img-text {
     font-size: 28px;
     width: 71%; }
@@ -37,14 +23,9 @@
     height: 314px; }
   .cards-wrapper {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    margin-left: 3.5em; }
-    .cards-wrapper a {
-      width: 47%; }
+    flex-direction: column; }
   .cards .cards-cover {
-    width: 85%; }
+    width: 100%; }
   .header-container nav ul {
     font-size: 18px; }
   .header-container .header-logo {
@@ -90,30 +71,18 @@
   .log-rating__wrapper .clr-off {
     font-size: 18px; } }
 
-@media screen and (max-width: 702px) {
-  .cards-wrapper {
-    margin-left: 2.5em; } }
-
-@media screen and (max-width: 530px) {
-  .cards-wrapper {
-    margin-left: 2em; } }
-
 @media screen and (max-width: 425px) {
+  .about-wrapper {
+    margin: 0 1em;
+    margin-bottom: 0; }
+  .img-overlay {
+    height: 150px; }
+    .img-overlay img {
+      height: 150px; }
   .log-host-name {
-    margin-left: 2em; }
+    margin-left: 3em; }
   .log-rating__wrapper {
     gap: 0.7em; }
   .cards-bg {
-    background-color: #fff; }
-    .cards-bg .cards-wrapper {
-      gap: 0;
-      margin-left: 3em; }
-  .cards .cards-cover {
-    width: 289px;
-    height: 289px; }
-  .cards .cards-title {
-    height: 83%; } }
-
-@media screen and (max-width: 375px) {
-  .cards-bg .cards-wrapper {
-    margin-left: 1.4em; } }
+    background-color: #fff;
+    padding: 0; } }
