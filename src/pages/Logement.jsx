@@ -69,8 +69,11 @@ export default function Logement() {
           </div>
           <div className="collapse-logement">
             <Collapse title={"Description"}>
-              {/* // Renders the logement's description */}
-              <p>{logement.description}</p>
+              {/* // Renders the logement's descrip
+              tion */}
+              <div className="log-collapse">
+                <p>{logement.description}</p>
+              </div>
             </Collapse>
             <Collapse title={"Équipements"}>
               {/* // Renders the logement's equipments in a list */}

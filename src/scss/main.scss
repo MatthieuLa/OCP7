@@ -331,6 +331,15 @@ main {
   }
 }
 
+// Log collapse with webkits to truncate text after 6 lines
+.log-collapse {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Nombre de lignes après lesquelles tronquer le texte */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .collapse-bg {
   color: #000;
   background-color: rgb(246, 246, 246);

@@ -32,7 +32,7 @@ export default function About() {
       <div className="collapse-about">
         {collapseItems.map((item) => (
           // I pass the title and content of each item and a custom class as props to the Collapse component
-          <Collapse key={item.tile} title={item.title} customClass="about">
+          <Collapse key={item.title} title={item.title} customClass="about">
             <p>{item.content}</p>
           </Collapse>
         ))}

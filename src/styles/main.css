@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -241,6 +242,14 @@ main {
       transform: rotate(0deg); }
     .collapse-title .fa-solid.fa-chevron-down {
       transform: rotate(360deg); }
+
+.log-collapse {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  /* Nombre de lignes après lesquelles tronquer le texte */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .collapse-bg {
   color: #000;
