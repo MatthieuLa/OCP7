@@ -24,9 +24,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-  margin: auto 6em;
-  width: 83%; }
+  padding: 1rem;
+  max-width: 1187px;
+  margin-top: 1.5em;
+  margin-bottom: -26px;
+  width: 93%; }
   .header-container .header-logo {
     color: #ff6060;
     font-size: 65px; }
@@ -40,7 +42,9 @@ main {
     list-style: none;
     gap: 2em;
     color: black;
-    font-size: 24px; }
+    font-size: 24px;
+    margin: 0;
+    padding: 0; }
     .header-container ul a {
       text-decoration: none;
       color: #000; }
@@ -307,7 +311,10 @@ main {
   height: 228px;
   width: 100%; }
   .footer .footer-logo {
-    font-size: 45px; }
+    margin-top: 1em;
+    height: 40px;
+    width: auto;
+    margin-bottom: -14px; }
     .footer .footer-logo img {
       height: 25px;
       width: 25px;

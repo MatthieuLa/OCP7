@@ -4,13 +4,11 @@ function Header() {
   return (
     <>
       <header className="header-container">
-        <h1 className="header-logo">
-          K
-          <span>
-            <img src="./src/assets/logo_house.svg" alt="" />
-          </span>
-          sa
-        </h1>
+        <img
+          src="/src/assets/Header_Logo.svg"
+          alt="Logo de la marque Kasa"
+          className="logo-kasa"
+        />
         <nav>
           <ul>
             <li>
